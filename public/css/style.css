@@ -44,10 +44,24 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+    /* greatness(grandeur) pas encore utiliser */
+.greatness {
+    height: 300px;
+}
+
+.edge {
+    margin-bottom: 4px;
+}
 
 .move {
     position: relative;
 }
+
+.pad-bot {
+    padding-bottom: 15px;
+}
+
+    /* Explorer nos restaurants */
 .btn {
     border: grey 1px solid;
     width: 208px;
@@ -56,7 +70,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary);
+    background-image: linear-gradient(#FF79DA, #9356DC);
     color: white;
     box-shadow: 4px 5px 8px #00000042
 }
@@ -90,12 +104,6 @@ html {
         box-shadow: #dcdcdc8c 0px 10px 6px;
     }
     
-    .select-index {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .number {
         position: absolute;
         left: 11px;
@@ -140,6 +148,8 @@ html {
         border: black 1px solid;
         border-radius: 15px;
         width: 90%;
+        height: auto;
+        margin-bottom: 1.5rem;
     }
 
     .pic-resto {
@@ -151,13 +161,21 @@ html {
 
     .new-resto {
         position: absolute;
-        left: 72%;
-        top: 15%;
+        left: 70%;
+        top: 12%;
         background: var(--tertiery);
-        width: 80px;
-        height: 27px;
+        width: 83px;
+        height: 37px;
         display: flex;
         justify-content: center;
         align-items: center;
+        color: green;
+    }
+        /* icon heart(icône coeur) section restaurants */
+    .posit-size {
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
+        font-size: 1.5rem;
     }
 }
