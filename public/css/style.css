@@ -16,22 +16,57 @@ a {
 
 ul {
     list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
 }
 
 li a {
     color: white;
 }
 
+    /* header div logo */
+header div {
+    height: 49px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+    /* localisation */
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-top: 5px solid #d3d3d38c;
+    border-bottom: 1px solid #d3d3d38c;
+    background: #d3d3d38c;
+}
+     .maps >span {
+        margin-right: 15px;
+    }
+
 footer {
     background-color: #000000c9;
+    margin-top: 20px;
 }
 
+    /* div footer */
+.foot {
+    padding-left: 5%;
+}
+
+    /* logo footer */
 .ohmyfood {
     color: white;
+    font-size: 1.3rem;
 }
 
-.background {
+.back-marg {
     background-color: #dcdcdc42;
+    margin-top: 20px;
 }
 
 .flex-col {
@@ -44,22 +79,40 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-    /* greatness(grandeur) pas encore utiliser */
-.greatness {
-    height: 300px;
-}
 
-.edge {
-    margin-bottom: 4px;
-}
+        /* section resevation, proriétés supplémentaires(index) */
+    .flex-col-al:nth-child(1) {
+        background-color: #d3d3d340;
+        height: 275px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+        /* section functioning (fonctionnement) */
+    .flex-col-al > h2 {
+        margin-right: 45%
+    }
+
+        /* section restaurants h2 */
+    .marg-right {
+        margin-right: 56%
+     }
 
 .move {
     position: relative;
 }
 
-.pad-bot {
+    /* article Restaurants: bloc info */
+.pad-back {
     padding-bottom: 15px;
+    padding-left: 10px;
+    background-color: #ffffff38;
 }
+
+        /* article Restaurants: h3 */
+    .pad-back > h3 {
+        margin-bottom: 4px;
+    }
 
     /* Explorer nos restaurants */
 .btn {
@@ -145,8 +198,9 @@ html {
     .bloc-resto {
         display: flex;
         flex-direction: column;
-        border: black 1px solid;
+        border:#00000029 1px solid;
         border-radius: 15px;
+        box-shadow:1px 5px 13px #00000038;
         width: 90%;
         height: auto;
         margin-bottom: 1.5rem;
