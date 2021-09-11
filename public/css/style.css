@@ -64,9 +64,14 @@ footer {
     font-size: 1.3rem;
 }
 
+/*=========== Classes générales ==========*/
 .back-marg {
     background-color: #dcdcdc42;
     margin-top: 20px;
+}
+
+.move {
+    position: relative;
 }
 
 .flex-col {
@@ -80,27 +85,44 @@ footer {
     align-items: center;
 }
 
+.pad-top {
+    padding-top: 20px;
+}
+
+/* =============================== */
+
         /* section resevation, proriétés supplémentaires(index) */
     .flex-col-al:nth-child(1) {
         background-color: #d3d3d340;
         height: 275px;
         margin-bottom: 20px;
+        padding-left: 13px;
+        padding-right: 20px;
+        padding-bottom: 55px;
         justify-content: center;
+        text-align: center;
     }
 
-        /* section functioning (fonctionnement) */
-    .flex-col-al > h2 {
-        margin-right: 45%
+        /* Section reservation font-size for h2 (font-size pour h2) */
+    .flex-col-al div > h2 {
+        font-size: 2.1em;
     }
 
-        /* section restaurants h2 */
-    .marg-right {
-        margin-right: 56%
-     }
+     /* Section reservation element p */
+    .flex-col-al p {
+        font-size: 1.1em;
+        margin-bottom: 28px;
+    }
 
-.move {
-    position: relative;
-}
+        /* section functioning (fonctionnement) et section restaurants h2*/
+    .pad-top > h2 {
+        padding-left: 18px;
+    }
+
+        /* 3ème bloc section fonctionnement */
+    .intro:nth-child(3) {
+        margin-bottom: 50px;
+    }
 
     /* article Restaurants: bloc info */
 .pad-back {
@@ -206,6 +228,7 @@ html {
         margin-bottom: 1.5rem;
     }
 
+     /* img section restaurants (index) */
     .pic-resto {
         width: 100%;
         height: 225px;
@@ -215,8 +238,8 @@ html {
 
     .new-resto {
         position: absolute;
-        left: 70%;
-        top: 12%;
+        right: 5%;
+        top: 5%;
         background: var(--tertiery);
         width: 83px;
         height: 37px;
