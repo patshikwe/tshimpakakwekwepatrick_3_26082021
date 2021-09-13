@@ -5,6 +5,13 @@ body {
 
 }
 
+    /* Variables couleurs: primaire, secondaire, tertiaire */
+html {
+    --primary: #9356DC;
+    --secondary: #FF79DA;
+    --tertiery: #99E2D0;
+}
+
 h1 {
     font-family: 'Shrikhand', cursive;
 }
@@ -14,17 +21,11 @@ a {
     color: black;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-li a {
-    color: white;
+    /* header (la palette, la note enchantée, à la française et le delice des sens) */
+.header-store {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
     /* header div logo */
@@ -48,6 +49,7 @@ header div {
         margin-right: 15px;
     }
 
+    /* =========== footer ======== */
 footer {
     background-color: #000000c9;
     margin-top: 20px;
@@ -62,6 +64,19 @@ footer {
 .ohmyfood {
     color: white;
     font-size: 1.3rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li a {
+    color: white;
 }
 
 /*=========== Classes générales ==========*/
@@ -90,7 +105,6 @@ footer {
 }
 
 /* =============================== */
-
         /* section resevation, proriétés supplémentaires(index) */
     .flex-col-al:nth-child(1) {
         background-color: #d3d3d340;
@@ -114,9 +128,14 @@ footer {
         margin-bottom: 28px;
     }
 
-        /* section functioning (fonctionnement) et section restaurants h2*/
-    .pad-top > h2 {
+        /* section functioning (fonctionnement) h2*/
+    .pad-left {
         padding-left: 18px;
+    }
+
+        /* section restaurants h2 */
+    .pad-left1 {
+        padding-left: 4.5%;
     }
 
         /* 3ème bloc section fonctionnement */
@@ -150,16 +169,26 @@ footer {
     box-shadow: 4px 5px 8px #00000042
 }
 
-    /* Variables couleurs: primaire, secondaire, tertiaire */
-html {
-    --primary: #9356DC;
-    --secondary: #FF79DA;
-    --tertiery: #99E2D0;
+ /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
+    /* bloc general grey (bloc général gris */
+.store {
+    background-color: #d3d3d340;
+    width: 100%;
+    position: relative;
 }
 
+    .bloc-info {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 90%;
+        border-radius: 25px;
+        margin-bottom: 20px;
+    }
 
+/* ============================================================== */
     /* Media query Mobile */
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
     body {
        display: flex;
        flex-direction: column;
@@ -179,6 +208,7 @@ html {
         box-shadow: #dcdcdc8c 0px 10px 6px;
     }
     
+        /* 1, 2 & 3 numbers bloc functiong (fonctionnement) */
     .number {
         position: absolute;
         left: 11px;
@@ -200,9 +230,12 @@ html {
         justify-content: space-around;
     }
 
+        /* size icon */
     .size {
         font-size: 1.3rem;
     }
+
+        /* size & color icon store bloc (functioning) fonctionnement (index) */
     .size-color {
         color: var(--primary);
         font-size: 1.2rem;
@@ -254,5 +287,64 @@ html {
         right: 10%;
         bottom: 10%;
         font-size: 1.5rem;
+    }
+
+    /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
+
+    .bloc-img {
+        display: flex;
+        width: 100%;
+    }
+        /* heigt img restaurant individuel additionné avec class "pic-resto" */
+    .haut {
+        height: 365px;
+        border-radius: 0;
+    }
+
+}
+
+/* ============================================================================= */
+
+    /* Media query Tablet (Tablette) */
+@media screen and (min-width: 641px) and (max-width: 1225px) {
+
+         /* Restaurants */
+    .bloc-resto {
+        display: flex;
+        flex-direction: column;
+        border:#00000029 1px solid;
+        border-radius: 15px;
+        box-shadow:1px 5px 13px #00000038;
+        width: 90%;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+        /* img section restaurants (index) */
+    .pic-resto {
+        width: 100%;
+        height: 225px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .new-resto {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        background: var(--tertiery);
+        width: 83px;
+        height: 37px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            color: green;
+    }
+
+        /* icon heart(icône coeur) section restaurants */
+    .posit-size {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    font-size: 1.5rem;
     }
 }
