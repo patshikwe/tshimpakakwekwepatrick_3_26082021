@@ -21,6 +21,11 @@ a {
     color: black;
 }
 
+header {
+    background-color: #ffffff;
+    height: 70px;
+}
+
     /* header (la palette, la note enchantée, à la française et le delice des sens) */
 .header-store {
     display: flex;
@@ -41,9 +46,10 @@ header div {
     justify-content: center;
     align-items: center;
     height: 40px;
-    border-top: 5px solid #d3d3d38c;
-    border-bottom: 1px solid #d3d3d38c;
-    background: #d3d3d38c;
+    border-top: 5px solid #cecece;
+    border-bottom: 1px solid #eaeaea;
+    background: #eaeaea;
+    height: 60px;
 }
      .maps >span {
         margin-right: 15px;
@@ -51,7 +57,7 @@ header div {
 
     /* =========== footer ======== */
 footer {
-    background-color: #000000c9;
+    background-color: #353535;
     margin-top: 20px;
 }
 
@@ -81,7 +87,7 @@ li a {
 
 /*=========== Classes générales ==========*/
 .back-marg {
-    background-color: #dcdcdc42;
+    background-color: #f6f6f6;
     margin-top: 20px;
 }
 
@@ -104,10 +110,15 @@ li a {
     padding-top: 20px;
 }
 
+.flex-al {
+    display: flex;
+    align-items: center;
+}
+
 /* =============================== */
         /* section resevation, proriétés supplémentaires(index) */
     .flex-col-al:nth-child(1) {
-        background-color: #d3d3d340;
+        background-color: #f6f6f6;
         height: 275px;
         margin-bottom: 20px;
         padding-left: 13px;
@@ -157,10 +168,10 @@ li a {
 
     /* Explorer nos restaurants */
 .btn {
-    border: grey 1px solid;
+    border: #bfbfbf 1px solid;
     width: 208px;
-    height: 43px;
-    border-radius: 20px;
+    height: 57px;
+    border-radius: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,137 +181,208 @@ li a {
 }
 
  /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
+   
     /* bloc general grey (bloc général gris */
 .store {
-    background-color: #d3d3d340;
+    background-color: #f6f6f6;
     width: 100%;
-    position: relative;
+    padding-top: 10px;
 }
 
+    /* margin & font-size h1 */
+.flex-al > h1 {
+    margin-left: 28px;
+    font-size: 2em;
+}
+
+        /* icon heart (icône coeur) element div store */
+    .posit-size2 {
+        position: absolute;
+        top: 43px;
+        right: 8%;
+        font-size: 2em;
+    }
+
+        /* bloc article */
+    .flex-col-al2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-col-al2:last-child {
+        margin-bottom: 40px;
+    }
+
+        .flex-col-al2  div > h2 {
+            margin-right: 259px;
+        }
+
+     /* elements artcile entrées, plats & desserts */
     .bloc-info {
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: #ffffff;
         width: 90%;
         border-radius: 25px;
         margin-bottom: 20px;
+        height: 93px;
+        box-shadow: #ededed 3px 12px 17px;
     }
 
+    .bloc-info span > h3 {
+        margin-left: 8px;
+    }
+
+    .flex-al > p {
+        margin-left: 8px;
+        width: 80%;
+        margin-top: 0;
+    }
+
+        /* number (nombre) euros */
+    .flex-al > span {
+        margin-left: 8px;
+        margin-bottom: 16px;
+    }
+
+        /* modif btn  */
+    .btn-modif {
+        height: 60px;
+        border-radius: 32px;
+    }
+    
 /* ============================================================== */
     /* Media query Mobile */
 @media (max-width: 640px) {
+
     body {
        display: flex;
        flex-direction: column;
        margin: 0;
     }
-    
-    .intro {
-        width: 90%;
-        height: 75px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #dcdcdc42;
-        border: #dcdcdc42 1px solid;
-        border-radius: 25px;
-        margin-bottom: 1.5rem;
-        box-shadow: #dcdcdc8c 0px 10px 6px;
-    }
-    
-        /* 1, 2 & 3 numbers bloc functiong (fonctionnement) */
-    .number {
-        position: absolute;
-        left: 11px;
-        border: var(--primary) 1px solid;
-        background-color: var(--primary);
-        border-radius: 15px;
-        width: 23px;
-        height: 25px;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .fun {
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
+        .back-f6 {
+            background-color: #f6f6f6;
+        }
+        
+        .intro {
+            width: 90%;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6f6f6;
+            border: #dcdcdc42 1px solid;
+            border-radius: 25px;
+            margin-bottom: 1.5rem;
+            box-shadow: #dcdcdc8c 0px 10px 6px;
+        }
+        
+            /* 1, 2 & 3 numbers bloc functiong (fonctionnement) */
+        .number {
+            position: absolute;
+            left: 11px;
+            border: var(--primary) 1px solid;
+            background-color: var(--primary);
+            border-radius: 15px;
+            width: 23px;
+            height: 25px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-        /* size icon */
-    .size {
-        font-size: 1.3rem;
-    }
+        .fun {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
 
-        /* size & color icon store bloc (functioning) fonctionnement (index) */
-    .size-color {
-        color: var(--primary);
-        font-size: 1.2rem;
-    }
+            /* size icon */
+        .size {
+            font-size: 1.3rem;
+        }
 
-    .space {
-        margin-right: 20px;
-    }
+            /* size & color icon store bloc (functioning) fonctionnement (index) */
+        .size-color {
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
 
-    .space1 {
-        margin-right: 13px;
-    }
+        .space {
+            margin-right: 20px;
+        }
 
-        /* Restaurants */
-    .bloc-resto {
-        display: flex;
-        flex-direction: column;
-        border:#00000029 1px solid;
-        border-radius: 15px;
-        box-shadow:1px 5px 13px #00000038;
-        width: 90%;
-        height: auto;
-        margin-bottom: 1.5rem;
-    }
+        .space1 {
+            margin-right: 13px;
+        }
 
-     /* img section restaurants (index) */
-    .pic-resto {
-        width: 100%;
-        height: 225px;
-        object-fit: cover;
-        border-radius: 15px 15px 0 0;
-    }
+            /* Restaurants */
+        .bloc-resto {
+            display: flex;
+            flex-direction: column;
+            border:#00000029 1px solid;
+            border-radius: 15px;
+            box-shadow:1px 5px 13px #00000038;
+            width: 90%;
+            height: auto;
+            margin-bottom: 1.5rem;
+        }
 
-    .new-resto {
-        position: absolute;
-        right: 5%;
-        top: 5%;
-        background: var(--tertiery);
-        width: 83px;
-        height: 37px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: green;
-    }
-        /* icon heart(icône coeur) section restaurants */
-    .posit-size {
-        position: absolute;
-        right: 10%;
-        bottom: 10%;
-        font-size: 1.5rem;
-    }
+        /* img section restaurants (index) */
+        .pic-resto {
+            width: 100%;
+            height: 225px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
 
-    /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
+        .new-resto {
+            position: absolute;
+            right: 5%;
+            top: 5%;
+            background: var(--tertiery);
+            width: 83px;
+            height: 37px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: green;
+        }
+            /* icon heart(icône coeur) section restaurants */
+        .posit-size {
+            position: absolute;
+            right: 10%;
+            bottom: 10%;
+            font-size: 1.5rem;
+        }
 
-    .bloc-img {
-        display: flex;
-        width: 100%;
-    }
-        /* heigt img restaurant individuel additionné avec class "pic-resto" */
-    .haut {
-        height: 365px;
-        border-radius: 0;
-    }
+        /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
 
+        .store {
+            border-radius: 40px 40px 0 0;
+            position: relative;
+            top: -40px;
+            height: 1600px;
+        }
+
+        .bloc-img {
+            display: flex;
+            width: 100%;
+        }
+
+            /* heigt img restaurant individuel additionné avec class "pic-resto" */
+        .haut {
+            height: 365px;
+            border-radius: 0;
+        }
+            /* margin (marge) h2 entrées, plats & desserts */
+        .marg-left {
+            margin-left: 28px;
+        }
 }
 
 /* ============================================================================= */
@@ -337,7 +419,7 @@ li a {
         display: flex;
         justify-content: center;
         align-items: center;
-            color: green;
+        color: green;
     }
 
         /* icon heart(icône coeur) section restaurants */
