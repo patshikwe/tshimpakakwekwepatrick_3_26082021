@@ -61,29 +61,31 @@ footer {
     margin-top: 20px;
 }
 
-    /* div footer */
-.foot {
-    padding-left: 5%;
-}
+        /* div footer desktop */
+    .foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+        /* logo footer */
+    .ohmyfood {
+        color: white;
+        font-size: 1.3rem;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
-    /* logo footer */
-.ohmyfood {
-    color: white;
-    font-size: 1.3rem;
-}
+    li {
+        margin-bottom: 10px;
+    }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-li a {
-    color: white;
-}
+    li a {
+        color: white;
+    }
 
 /*=========== Classes générales ==========*/
 .back-marg {
@@ -115,6 +117,11 @@ li a {
     align-items: center;
 }
 
+.flex-al-ar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 /* =============================== */
         /* section resevation, proriétés supplémentaires(index) */
     .flex-col-al:nth-child(1) {
@@ -190,18 +197,10 @@ li a {
 }
 
     /* margin & font-size h1 */
-.flex-al > h1 {
+.flex-al-ar > h1 {
     margin-left: 28px;
     font-size: 2em;
 }
-
-        /* icon heart (icône coeur) element div store */
-    .posit-size2 {
-        position: absolute;
-        top: 43px;
-        right: 8%;
-        font-size: 2em;
-    }
 
         /* bloc article */
     .flex-col-al2 {
@@ -226,30 +225,25 @@ li a {
         width: 90%;
         border-radius: 25px;
         margin-bottom: 20px;
-        height: 93px;
         box-shadow: #ededed 3px 12px 17px;
     }
 
-    .bloc-info span > h3 {
+    .bloc-info div > h3 {
         margin-left: 8px;
     }
 
     .flex-al > p {
         margin-left: 8px;
-        width: 80%;
         margin-top: 0;
-    }
-
-        /* number (nombre) euros */
-    .flex-al > span {
-        margin-left: 8px;
-        margin-bottom: 16px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
     }
 
         /* modif btn  */
     .btn-modif {
         height: 60px;
-        border-radius: 32px;
+        margin-top: 42px
     }
     
 /* ============================================================== */
@@ -379,54 +373,182 @@ li a {
             height: 365px;
             border-radius: 0;
         }
+
+            /* icon heart (icône coeur) element div store */
+        .posit-size2 {
+            font-size: 2em;
+            margin-right: 28px
+        }
+
             /* margin (marge) h2 entrées, plats & desserts */
         .marg-left {
             margin-left: 28px;
         }
+
+    /* ======== footer ========================= */
+        /* div footer */
+    .foot {
+        padding-left: 5%;
+        display: block;
+    }
 }
 
 /* ============================================================================= */
 
     /* Media query Tablet (Tablette) */
-@media screen and (min-width: 641px) and (max-width: 1225px) {
+@media screen and (min-width: 641px) and (max-width: 1024px) {
 
-         /* Restaurants */
-    .bloc-resto {
+    body {
         display: flex;
         flex-direction: column;
-        border:#00000029 1px solid;
-        border-radius: 15px;
-        box-shadow:1px 5px 13px #00000038;
-        width: 90%;
-        height: auto;
-        margin-bottom: 1.5rem;
-    }
-        /* img section restaurants (index) */
-    .pic-resto {
-        width: 100%;
-        height: 225px;
-        object-fit: cover;
-        border-radius: 15px 15px 0 0;
-    }
+        margin: 0;
+     }
+        /* main */
+        .posit {
+            position: relative;
+            bottom: -52px;
+        }
 
-    .new-resto {
+           /* size icon arrow (flèche)*/
+           .size {
+                font-size: 1.5rem;
+            }
+
+            .intro {
+                width: 90%;
+                height: 75px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f6f6f6;
+                border: #dcdcdc42 1px solid;
+                border-radius: 25px;
+                margin-bottom: 1.5rem;
+                box-shadow: #dcdcdc8c 0px 10px 6px;
+            }
+
+            /* 1, 2 & 3 numbers bloc functiong (fonctionnement) */
+            .number {
+                position: absolute;
+                left: 25px;
+                border: var(--primary) 1px solid;
+                background-color: var(--primary);
+                border-radius: 15px;
+                width: 23px;
+                height: 25px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .fun {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+                /* section fonctionnement h4 */
+            .fun > h4 {
+                font-size: 1.5em;
+            }
+
+         /* size & color icon store bloc (functioning) fonctionnement (index) */
+         .size-color {
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        .space {
+            margin-right: 20px;
+        }
+
+        .space1 {
+            margin-right: 13px;
+        }
+
+            /* Restaurants */
+        .bloc-resto {
+            display: flex;
+            flex-direction: column;
+            border:#00000029 1px solid;
+            border-radius: 15px;
+            box-shadow:1px 5px 13px #00000038;
+            width: 90%;
+            height: auto;
+            margin-bottom: 1.5rem;
+        }
+            /* img section restaurants (index) */
+        .pic-resto {
+            width: 100%;
+            height: 322px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .new-resto {
+            position: absolute;
+            right: 5%;
+            top: 5%;
+            background: var(--tertiery);
+            width: 83px;
+            height: 37px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: green;
+        }
+
+            /* icon heart(icône coeur) section restaurants */
+        .posit-size {
         position: absolute;
-        right: 5%;
-        top: 5%;
-        background: var(--tertiery);
-        width: 83px;
-        height: 37px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: green;
+        right: 10%;
+        bottom: 10%;
+        font-size: 1.5rem;
+        }
+
+        /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
+
+    .header-store {
+        padding-top: 25px;
     }
 
-        /* icon heart(icône coeur) section restaurants */
-    .posit-size {
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-    font-size: 1.5rem;
+        /* icon heart (icône coeur) element div store */
+        .posit-size2 {
+            position: absolute;
+            top: 367px;
+            right: 8%;
+            font-size: 2em;
+        }
+
+        .flex-al-ar > h1 {
+            margin-right: 80px;
+            font-size: 2.2em;
+        }
+
+        /* margin (marge) h2 entrées, plats & desserts */
+        .marg-left {
+            margin-left: 55px;
+        }
+
+        .bloc-info div > h3 {
+            font-size: 1.5em;
+        }
+
+        .flex-al > p {
+            font-size: 1.3em;
+        }
+
+        .btn-marg {
+            margin-bottom: 20px;
+        }
+
+    /* ======== footer ========================= */
+        /* div footer */
+    .foot {
+        padding-left: 5%;
+        display: block;
     }
+
 }
