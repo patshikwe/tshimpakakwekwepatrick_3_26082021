@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 
 }
 
@@ -12,7 +13,7 @@ html {
     --tertiery: #99E2D0;
 }
 
-h1 {
+.t1 {
     font-family: 'Shrikhand', cursive;
 }
 
@@ -58,7 +59,6 @@ header div {
     /* =========== footer ======== */
 footer {
     background-color: #353535;
-    margin-top: 20px;
 }
 
         /* div footer desktop */
@@ -97,11 +97,6 @@ footer {
     }
 
 /*=========== Classes générales ==========*/
-.back-marg {
-    background-color: #f6f6f6;
-    margin-top: 20px;
-}
-
 .move {
     position: relative;
 }
@@ -305,7 +300,12 @@ footer {
     }
 
  /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
-   
+
+ .back-posit {
+    background-color: #f6f6f6;
+    position: relative;
+    top: 39px;
+}
     /* bloc general grey (bloc général gris */
 .store {
     background-color: #f6f6f6;
@@ -313,17 +313,14 @@ footer {
     padding-top: 10px;
 }
 
-        /* margin & font-size h1 */
-    .flex-al-ar > h1 {
+        /* margin & font-size t1 */
+    .flex-al-ar > .t1 {
         margin-right: 80px;
         font-size: 2.2em;
     }
 
      /* icon heart (icône coeur) element div store */
      .posit-size2 {
-        position: absolute;
-        bottom: 15%;
-        right: 8%;
         font-size: 2em;
     }
 
@@ -371,23 +368,19 @@ footer {
         /* modif btn  */
     .btn-modif {
         height: 60px;
-        margin-top: 42px
+        margin: 20px;
     }
     
 /* ============================================================== */
     /* Media query Mobile */
 @media (max-width: 640px) {
 
-    body {
-       display: flex;
-       flex-direction: column;
-       margin: 0;
-    }
-
-        .back-f6 {
+        /* .back-posit {
             background-color: #f6f6f6;
+            position: relative;
+            top: 39px;
         }
-    
+     */
             /* 1, 2 & 3 numbers bloc functiong (fonctionnement) */
         .number {
             left: 11px;
@@ -424,12 +417,11 @@ footer {
         .store {
             border-radius: 40px 40px 0 0;
             position: relative;
-            top: -40px;
-            height: 1600px;
+            top: -42px;
         }
 
-            /* margin & font-size h1 */
-        .flex-al-ar > h1 {
+            /* margin & font-size t1 */
+        .flex-al-ar > .t1 {
             margin-left: 19px;
             font-size: 2em;
         }
@@ -480,27 +472,21 @@ footer {
     body {
         display: flex;
         flex-direction: column;
-        margin: 0;
      }
-        /* main */
-        .posit {
-            position: relative;
-            bottom: -52px;
+
+        /* 1, 2 & 3 numbers bloc functioning (fonctionnement) */
+        .number {
+            left: 25px;
         }
 
-            /* 1, 2 & 3 numbers bloc functioning (fonctionnement) */
-            .number {
-                left: 25px;
-            }
-
-                /* Restaurants */
-            .bloc-resto {
-                width: 100%;
-            }
-                /* img section restaurants (index) */
-            .pic-resto {
-                height: 322px;
-            }
+            /* Restaurants */
+        .bloc-resto {
+            width: 100%;
+        }
+            /* img section restaurants (index) */
+        .pic-resto {
+            height: 322px;
+        }
 
         /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
 
@@ -508,23 +494,8 @@ footer {
         padding-top: 25px;
     }
 
-        .flex-al-ar > h1 {
-            margin-right: 80px;
-            font-size: 2.2em;
-        }
-
-         /* icon heart (icône coeur) element div store */
-         .posit-size2 {
-            top: 367px;
-            font-size: 2em;
-        }
-
         .flex-al > p {
             font-size: 1.3em;
-        }
-
-        .btn-marg {
-            margin-bottom: 20px;
         }
 
     /* ======== footer ========================= */
