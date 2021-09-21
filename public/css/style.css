@@ -125,6 +125,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+
 }
 /* =============================== */
         /* section resevation, proriétés supplémentaires(index) */
@@ -150,24 +151,29 @@ footer {
             margin-bottom: 28px;
         }
 
-        /* bloc section functioning (fonctionnement)  */
-    .intro {
-        width: 90%;
-        height: 75px;
+        /* bloc functioning (fonctionnement) */
+    .pres {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f6f6f6;
-        border: #dcdcdc42 1px solid;
-        border-radius: 25px;
-        margin-bottom: 1.5rem;
-        box-shadow: #dcdcdc8c 0px 10px 6px;
+        flex-direction: row;
     }
+             /* bloc section functioning (fonctionnement)  */
+        .intro {
+            width: 90%;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6f6f6;
+            border: #dcdcdc42 1px solid;
+            border-radius: 25px;
+            margin-bottom: 1.5rem;
+            box-shadow: #dcdcdc8c 0px 10px 6px;
+        }
 
-        /* 3ème bloc section fonctionnement */
-    .intro:nth-child(3) {
-        margin-bottom: 50px;
-    }
+            /* 3ème bloc section fonctionnement */
+        .intro:nth-child(3) {
+            margin-bottom: 50px;
+        }
 
             /* section functioning (fonctionnement) h2*/
         .pad-left {
@@ -329,6 +335,16 @@ footer {
         margin-left: 5%;
     }
 
+            /* margin bottom h2 */
+        .marg-left::after {
+            content: "";
+            display: block;
+            margin: 0;
+            width: 61px;
+            padding-top: 5px;
+            border-bottom: 3px solid var(--tertiery);
+        }
+
         /* bloc article */
     .flex-col-al2 {
         display: flex;
@@ -375,12 +391,12 @@ footer {
     /* Media query Mobile */
 @media (max-width: 640px) {
 
-        /* .back-posit {
-            background-color: #f6f6f6;
-            position: relative;
-            top: 39px;
-        }
-     */
+        /* bloc functioning (fonctionnement) */
+    .pres {
+        flex-direction: column;
+        align-items: center;
+    }
+
             /* 1, 2 & 3 numbers bloc functiong (fonctionnement) */
         .number {
             left: 11px;
@@ -474,19 +490,25 @@ footer {
         flex-direction: column;
      }
 
-        /* 1, 2 & 3 numbers bloc functioning (fonctionnement) */
-        .number {
-            left: 25px;
+            /* bloc functioning (fonctionnement) */
+        .pres {
+            flex-direction: column;
+            align-items: center;
         }
 
-            /* Restaurants */
-        .bloc-resto {
-            width: 100%;
-        }
-            /* img section restaurants (index) */
-        .pic-resto {
-            height: 322px;
-        }
+            /* 1, 2 & 3 numbers bloc functioning (fonctionnement) */
+            .number {
+                left: 25px;
+            }
+
+                /* Restaurants */
+            .bloc-resto {
+                width: 100%;
+            }
+                /* img section restaurants (index) */
+            .pic-resto {
+                height: 322px;
+            }
 
         /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
 
