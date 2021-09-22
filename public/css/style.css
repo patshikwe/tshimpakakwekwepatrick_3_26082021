@@ -173,6 +173,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        padding-left: 23px;
     }
 
              /* bloc section functioning (fonctionnement) container icon, number & h4  */
@@ -196,7 +197,7 @@ footer {
 
             /* section functioning (fonctionnement) h2*/
         .pad-left {
-            padding-left: 4%;
+            padding-left: 5%;
         }
 
          /* 1, 2 & 3 numbers bloc functiong (fonctionnement) */
@@ -215,17 +216,17 @@ footer {
 
             /* position number (chiffre) 1 */
             .n1 {
-                left: 3%;
+                left: 5%;
             }
 
             /* position number (chiffre) 2 */
             .n2 {
-                left: 35%;
+                left: 36.5%;
             }
 
             /* position number (chiffre) 3 */
             .n3 {
-                right: 31%;
+                right: 30%;
             }
 
              /*  section fonctionnement, container icon & h4 */
@@ -250,11 +251,6 @@ footer {
         /* section fonctionnement h4 */
         .fun > h4 {
             font-size: 1.3em;
-        }
-
-            /* section restaurants h2 */
-        .pad-left1 {
-            padding-left: 4.5%;
         }
 
         /* container bloc-resto */
@@ -410,14 +406,11 @@ footer {
     /* Media query Mobile */
 @media (max-width: 640px) {
 
-      /* section functioning (fonctionnement) h2*/
-    .pad-left {
-        padding-left: 18px;
-    }
         /* bloc functioning (fonctionnement) */
     .pres {
         flex-direction: column;
         align-items: center;
+        padding-left: 8px;
     }
 
            /* bloc section functioning (fonctionnement) container icon  */
@@ -427,7 +420,7 @@ footer {
 
             /* 1, 2 & 3 numbers bloc functiong (fonctionnement) */
         .n1, .n2, .n3 {
-            left: 3%;
+            left: 5%;
         }
 
         /*  section fonctionnement, container icon & h4 */
@@ -465,7 +458,7 @@ footer {
         }
 
             /* margin & font-size t1 */
-        .flex-al-ar > .t1 {
+        .t1 {
             margin-left: 19px;
             font-size: 2em;
         }
@@ -522,6 +515,7 @@ footer {
         .pres {
             flex-direction: column;
             align-items: center;
+            padding-left: 11px;
         }
 
                /* bloc section functioning (fonctionnement) container icon */
@@ -531,7 +525,7 @@ footer {
     
             /* 1, 2 & 3 numbers bloc functioning (fonctionnement) */
             .n1, .n2, .n3 {
-                left: 3%;
+                left: 5%;
             }
                 
                 /*  section fonctionnement, container icon & h4 */
