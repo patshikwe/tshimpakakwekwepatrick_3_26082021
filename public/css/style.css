@@ -308,6 +308,10 @@ footer {
             font-size: 1.5rem;
             }
 
+            .opac2 {
+                opacity: 0;
+               }
+               
                 /* article Restaurants: bloc info */
             .pad-back {
                 padding-bottom: 15px;
@@ -322,7 +326,7 @@ footer {
 
  /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
 
- .back-posit {
+.back-posit {
     background-color: #f6f6f6;
     position: relative;
     top: 39px;
@@ -338,11 +342,13 @@ footer {
     .t1 {
         margin-right: 80px;
         font-size: 2.2em;
+        margin-top: 27px;
     }
 
      /* icon heart (icône coeur) element div store */
      .posit-size2 {
         font-size: 2em;
+        position: absolute;
     }
 
      /* margin (marge) h2 entrées, plats & desserts */
@@ -374,7 +380,6 @@ footer {
      /* elements artcile entrées, plats & desserts */
     .bloc-info {
         display: flex;
-        flex-direction: column;
         background-color: #ffffff;
         width: 90%;
         border-radius: 25px;
@@ -382,6 +387,21 @@ footer {
         box-shadow: #ededed 3px 12px 17px;
     }
 
+    .note {
+        width: 80%;
+    }
+
+    .check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        font-size: 2em;
+        color: white;
+        background: var(--tertiery);
+        border-radius: 0 25px 25px 0;
+       }
+       
     .bloc-info div > h3 {
         margin-left: 8px;
         font-size: 1.5em;
@@ -480,12 +500,15 @@ footer {
 
             /* icon heart (icône coeur) element div store */
         .posit-size2 {
-            margin-right: 12px;
-            top: 43px;
+            position: absolute;
+            right: 7%;
+        }
+
+        .check {
+            font-size: 1.5em;
         }
 
         .bloc-info div > h3 {
-            margin-left: 8px;
             font-size: 1.17em;
         }
     
