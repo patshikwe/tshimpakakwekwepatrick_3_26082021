@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg class="opac3" version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="23.000000pt" height="26.000000pt" viewBox="0 0 1280.000000 1280.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+fill="url(#Gradient-1)" stroke="none">
+<path d="M3262 11755 c-377 -35 -639 -111 -971 -280 -242 -123 -473 -290 -685
+-495 -562 -545 -899 -1253 -1032 -2170 -22 -149 -32 -840 -14 -1005 128 -1243
+780 -2519 1972 -3862 418 -471 1001 -1042 1570 -1536 609 -529 1442 -1177
+2181 -1696 l117 -83 263 188 c1350 964 2455 1903 3331 2829 1344 1422 2086
+2783 2241 4110 21 181 21 789 0 970 -109 938 -470 1711 -1060 2274 -416 396
+-941 661 -1455 735 -290 41 -877 47 -1130 12 -556 -79 -972 -257 -1405 -602
+-135 -107 -521 -494 -670 -672 -60 -72 -113 -130 -116 -129 -3 1 -66 72 -139
+157 -172 199 -504 531 -645 644 -429 343 -846 522 -1405 602 -157 22 -747 28
+-948 9z"/>
+</g>
+    <defs>
+        <linearGradient id="Gradient-1"
+             x1="20%" y1="30%" x2="40%" y2="80%">
+        <stop offset="0%" stop-color= "#d66cdb" />
+        <stop offset="50%" stop-color= "#b962db" />
+        <stop offset="100%" stop-color= "#ae5fdb" />
+        </linearGradient>
+    </defs>
+</svg>
