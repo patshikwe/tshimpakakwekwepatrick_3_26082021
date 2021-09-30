@@ -6,6 +6,44 @@ body {
 
 }
 
+  /* container div loader (page index) */
+.dv-load {
+    width: 100%;
+    height: 82%;
+    display: flex;
+    background-color: #eaeaeac2;
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+                    /* appel animation div-load */
+    -webkit-animation: dv-load 15s ease-in-out forwards;
+    -o-animation: dv-load 15s ease-in-out forwards; 
+    animation: dv-load 15s ease-in-out forwards;
+}
+
+/* Animation div container loader page index */
+@-webkit-keyframes dv-load {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0);
+        -webkit-opacity: 0;
+    }
+}
+
+@keyframes dv-load {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
     /* Variables couleurs: primaire, secondaire, tertiaire */
 html {
     --primary: #9356DC;
@@ -412,9 +450,14 @@ footer {
     }
     
 /* ============================================================== */
-    /* Media query Mobile */
+
+    /* ==== Media query Mobile ======== */
 @media (max-width: 640px) {
 
+    /* Container div loader */
+    .dv-load {
+        height: 89%;
+    }
         /* bloc functioning (fonctionnement) */
     .pres {
         flex-direction: column;
@@ -508,13 +551,18 @@ footer {
 
 /* ============================================================================= */
 
-    /* Media query Tablet (Tablette) */
+    /* === Media query Tablet (Tablette) ======= */
 @media screen and (min-width: 641px) and (max-width: 1024px) {
 
     body {
         display: flex;
         flex-direction: column;
      }
+
+         /* Container div loader */
+        .dv-load {
+            height: 90%;
+        }
 
             /* bloc functioning (fonctionnement) */
         .pres {
@@ -571,6 +619,52 @@ footer {
 }
 
 /* =============== Animation ====================================== */
+        /* LOADER (Chargement page index) */
+        .loader {
+            border: 10px solid #f6f6f6;
+            border-top: 10px solid #9356DC;
+            border-bottom: 10px solid #FF79DA;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: auto;
+            position: absolute;
+            top: 0; right: 0;left: 0; bottom: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            opacity: 0;
+                         /* appel animation loader */
+            -webkit-animation: loader 15s linear;
+            -o-animation: loader 15s linear;
+            animation: loader 15s linear;
+        }
+            @-webkit-keyframes loader {
+                0% {
+                -webkit-transform: rotate(0deg);
+                -webkit-opacity: 1;
+                }
+
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    -webkit-opacity: 0;
+                }
+            }
+
+            @keyframes loader {
+                0% {
+                    transform: rotate(0deg);
+                    opacity: 1;
+                }
+
+                100% {
+                    transform: rotate(360deg);
+    
+                }
+            }
+
+
    /* == icon heart(icône coeur) section restaurants == */
 .posit-size {
     position: absolute;
@@ -611,7 +705,7 @@ footer {
         font-size: 1.8em;
     }
 }
-
+         /* appel animation heart*/
 .opac1:active {
     animation: heart 10s;
 }
@@ -626,7 +720,7 @@ footer {
     transform: scale(1.05);
 }
 
-/* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
+/* la pallette du goût, la note enchantée, à la farnçaise et le delice des sens */
     /* == hearts (coeurs) == */
 .opac2 {
     position: absolute;
@@ -665,7 +759,7 @@ footer {
         opacity: 1;
     }
 }
-
+         /* appel animation afficheMenu */
 .bloc-info:nth-child(1) {
    animation: afficheMenu 8s ;
 }
