@@ -299,13 +299,6 @@ footer {
                 align-items: center;
                 color: green;
             }
-
-                /* icon heart(icône coeur) section restaurants */
-            .posit-size {
-            position: absolute;
-            right: 10%;
-            bottom: 7%;
-            }
                
                 /* article Restaurants: bloc info */
             .pad-back {
@@ -559,7 +552,7 @@ footer {
                 height: 322px;
             }
 
-        /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
+     /* la pallette du goût, la note enchantée, à la farnçaise et le delice des sens */
 
     .header-store {
         padding-top: 25px;
@@ -577,19 +570,53 @@ footer {
     }
 }
 
-/* =========== Animation========================== */
-
-.opac1 {
+/* =============== Animation ====================================== */
+   /* == icon heart(icône coeur) section restaurants == */
+.posit-size {
+    position: absolute;
+    right: 10%;
+    bottom: 9%;
+    font-size: 1.8em;
+    color: #00000026;
+}
+   
+ .opac1 {
     opacity: 0;
     position: absolute;
     right: 10%;
-    bottom: 7%;
-   }
+    bottom: 9%; 
+    font-size: 1em;
+    cursor: pointer;
+ }
 
-.opac1:hover {
-    opacity: 1;
+    /* dégradé couleur icône coeur fontawasome par son speudo-classe */
+ .opac1::before , .opac3::before {
+    background: linear-gradient(#ae5fdb, #b962db, #d66cdb );
+    background-clip: text;
+    background: -webkit-linear-gradient( #ae5fdb, #b962db, #d66cdb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+ }
+
+@keyframes heart {
+    0% {
+        opacity: 0;
+        font-size: 1em;
+        transition: ease-in;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 1.8em;
+    }
 }
 
+.opac1:active {
+    animation: heart 10s;
+}
+
+  /* == bloc-resto page index == */
 .aspect {
     transform: scale(1);
     transition: transform 400ms;
@@ -600,30 +627,80 @@ footer {
 }
 
 /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
-
+    /* == hearts (coeurs) == */
 .opac2 {
     position: absolute;
     right: 10%;
-    top: 43px;
+    bottom: 6px;
+    font-size: 1.8em;
+    color: #00000026;
 }
 
-.opac2:active {
-   opacity: 0;
-}
 .opac3 {
     opacity: 0;
     position: absolute;
     right: 10%;
-    top: 43px;
+    bottom: 6px;
+    font-size: 1em;
     cursor: pointer;
-    transition: all 0.2s linear 0s;
-    bottom: 0;
 }
 
 .opac3:active {
-    opacity: 1;
-    height: 26.000pt;
-    width: 23.000pt;
-    
+    animation: heart 10s;
 }
 
+/* ============= */
+
+@keyframes afficheMenu {
+    0% {
+        opacity: 0;
+        transition: ease-in-out;
+    }
+    
+    50% {
+        transition: ease-in;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bloc-info:nth-child(1) {
+   animation: afficheMenu 8s ;
+}
+.bloc-info:nth-child(2) {
+    animation: afficheMenu 9s ;
+}
+
+.bloc-info:nth-child(3) {
+    animation: afficheMenu 10s ;
+}
+ 
+.bloc-info:nth-child(4) {
+    animation: afficheMenu 11s ;
+}
+
+.bloc-info:nth-child(5) {
+    animation: afficheMenu 12s ;
+}
+
+.bloc-info:nth-child(6) {
+    animation: afficheMenu 13s ;
+}
+
+.bloc-info:nth-child(7) {
+    animation: afficheMenu 14s ;
+}
+
+.bloc-info:nth-child(8) {
+    animation: afficheMenu 15s ;
+}
+
+.bloc-info:nth-child(9) {
+    animation: afficheMenu 16s ;
+}
+
+.bloc-info:nth-child(10) {
+    animation: afficheMenu 17s ;
+}
