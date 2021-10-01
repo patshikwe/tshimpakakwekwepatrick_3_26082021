@@ -231,6 +231,12 @@ footer {
             border-radius: 25px;
             margin-bottom: 1.5rem;
             box-shadow: #dcdcdc8c 0px 10px 6px;
+            cursor: pointer;
+        }
+
+        .intro:hover {
+            background-color: #f6f6f64f;
+            box-shadow: #dcdcdcd9 0px 2px 26px;
         }
 
             /* 3ème bloc section fonctionnement */
@@ -417,23 +423,73 @@ footer {
         border-radius: 25px;
         margin-bottom: 20px;
         box-shadow: #ededed 3px 12px 17px;
+        cursor: pointer;
+    }
+ 
+    /* contient les textes, enfant bloc-info */
+    .note {
+        width: 100%;
+        transition: all 0.2s linear;
     }
 
-    .note {
+    .bloc-info:hover .note {
         width: 80%;
     }
 
-    .check {
+    /* ======= ensemble animation che=========== */
+    .val {
         display: flex;
-        align-items: center;
         justify-content: center;
-        width: 20%;
-        font-size: 2em;
-        color: white;
+        width: 0%;
         background: var(--tertiery);
         border-radius: 0 25px 25px 0;
-       }
-       
+        transition: all 0.2s linear;
+    }
+    
+    .bloc-info:hover .val {
+        width: 20%;
+    }
+
+    /* ======= ensemble animation check=========== */
+         /* icône validation (check) */
+    .check {
+        display: none;
+        font-size: 2em;
+        color: white;
+        -webkit-animation: check 0.6s ease-in-out both;
+	        animation: check 0.6s ease-in-out both;
+    }
+
+    @-webkit-keyframes check {
+        0% {
+        -webkit-transform: rotate(0);
+            
+        }
+
+        100% {
+        -webkit-transform: rotate(360deg);
+                
+        }
+    }
+
+    @keyframes check {
+        0% {
+        transform: rotate(0);
+                
+        }
+
+        100% {
+        transform: rotate(360deg);
+                
+        }
+    }
+  
+    .bloc-info:hover .check {
+       display: flex;
+       align-items: center;
+    }
+    /* =================================== */
+
     .bloc-info div > h3 {
         margin-left: 8px;
         font-size: 1.5em;
@@ -640,7 +696,6 @@ footer {
             justify-content: center;
             font-weight: 900;
             opacity: 0;
-                         /* appel animation loader */
             -webkit-animation: loader 2.5s ease-out;
             -o-animation: loader 2.5s ease-out;
             animation: loader 2.5s ease-out;
@@ -670,7 +725,6 @@ footer {
                 }
             }
 
-
    /* == icon heart(icône coeur) section restaurants == */
 .posit-size {
     position: absolute;
@@ -696,8 +750,12 @@ footer {
     background: -webkit-linear-gradient( #ae5fdb, #b962db, #d66cdb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: initial;
  }
+
+ /* ==== Animation heart (coeur) page index === */
+.opac1:hover {
+    animation: heart 2s forwards;
+}
 
 @keyframes heart {
     0% {
@@ -711,12 +769,9 @@ footer {
         font-size: 1.8em;
     }
 }
-         /* appel animation heart*/
-.opac1:hover {
-    animation: heart 2s forwards;
-}
 
-  /* == bloc-resto page index == */
+
+  /* == bloc-resto page index  (animation) == */
 .aspect {
     transform: scale(1);
     transition: transform 400ms;
@@ -745,12 +800,13 @@ footer {
     cursor: pointer;
 }
 
+/* == Animation heart (coeur) pages restaurants */
+    /*  code keyframe ligne 761 */
 .opac3:hover {
     animation: heart 2s forwards;
 }
 
-/* ============= */
-
+/* ===== Animation Affichage Menu==== */
 @keyframes afficheMenu {
     0% {
         opacity: 0;
@@ -765,7 +821,7 @@ footer {
         opacity: 1;
     }
 }
-         /* appel animation afficheMenu */
+        
 .bloc-info:nth-child(1) {
    animation: afficheMenu 8s ;
 }
