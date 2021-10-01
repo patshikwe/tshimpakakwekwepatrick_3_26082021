@@ -823,40 +823,41 @@ footer {
 }
         
 .bloc-info:nth-child(1) {
-   animation: afficheMenu 8s ;
+   animation: afficheMenu 2s;
 }
+
 .bloc-info:nth-child(2) {
-    animation: afficheMenu 9s ;
+    animation: afficheMenu 3s;
 }
 
 .bloc-info:nth-child(3) {
-    animation: afficheMenu 10s ;
+    animation: afficheMenu 5s;
 }
  
 .bloc-info:nth-child(4) {
-    animation: afficheMenu 11s ;
+    animation: afficheMenu 6s;
 }
 
 .bloc-info:nth-child(5) {
-    animation: afficheMenu 12s ;
+    animation: afficheMenu 7s;
 }
 
 .bloc-info:nth-child(6) {
-    animation: afficheMenu 13s ;
+    animation: afficheMenu 8s;
 }
 
 .bloc-info:nth-child(7) {
-    animation: afficheMenu 14s ;
+    animation: afficheMenu 9s;
 }
 
 .bloc-info:nth-child(8) {
-    animation: afficheMenu 15s ;
+    animation: afficheMenu 10s;
 }
 
 .bloc-info:nth-child(9) {
-    animation: afficheMenu 16s ;
+    animation: afficheMenu 11s;
 }
 
 .bloc-info:nth-child(10) {
-    animation: afficheMenu 17s ;
+    animation: afficheMenu 12s;
 }
