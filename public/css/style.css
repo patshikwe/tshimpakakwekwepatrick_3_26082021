@@ -247,7 +247,7 @@ footer {
     }
 
     .btn:hover {
-        background-image: linear-gradient(#f284d3, #b480f4);
+        background-image: linear-gradient(#f284d3b3, #b480f4);
         box-shadow: 8px 6px 15px #00000042;
     }
         /* bloc functioning (fonctionnement) */
@@ -400,6 +400,39 @@ footer {
                 margin-bottom: 4px;
             }
 
+            .boom {
+                display: flex;
+                width: 78px;
+                height: 72px;
+                position: absolute;
+                cursor: pointer;
+                bottom: 4%;
+                right: 3%;
+                clip-path: polygon(36% 37%, 49% 41%, 60% 38%, 68% 42%, 69% 49%, 47% 72%, 29% 49%, 29% 41%);
+            }
+
+            .item {
+                width: 100%;
+                height: 0;
+                background: linear-gradient(#ae5fdb, #b962db, #d66cdb );
+                transition: 0.3s linear;
+                position: absolute;
+                bottom: 0;
+            }
+    
+            .boom:hover .item {
+                height: 100%;
+            }
+
+            /* == icon heart (icône coeur) bloc-resto == */
+            .posit-size {
+                position: absolute;
+                left: 28%;
+                bottom: 25%;
+                font-size: 1.9em;
+                color: #0000002e;
+            }
+
  /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
 
 .back-posit {
@@ -413,27 +446,29 @@ footer {
     width: 100%;
     padding-top: 10px;
     position: relative;
+    border-radius: 66px 66px 0 0;
+    top: -51px;
 }
 
-        /* margin & font-size t1 */
+    /* margin & font-size t1 */
     .t1 {
         margin-right: 80px;
         font-size: 2.2em;
         margin-top: 27px;
     }
 
-     /* icon heart (icône coeur) element div store */
-     .posit-size2 {
-        font-size: 2em;
-        position: absolute;
-    }
+    /* div boom container heart (complément ligne 403) element div store */
+    .flex-al-ar + .boom {
+         top: 20px;
+         right: 11%;
+     }
 
-     /* margin (marge) h2 entrées, plats & desserts */
-     .marg-left {
+    /* margin (marge) h2 entrées, plats & desserts */
+    .marg-left {
         margin-left: 5%;
     }
 
-            /* margin bottom h2 */
+         /* margin bottom h2 */
         .marg-left::after {
             content: "";
             display: block;
@@ -609,6 +644,12 @@ footer {
             margin-left: 19px;
             font-size: 2em;
         }
+
+         /* div boom container heart (complément ligne 403) element div store */
+        .flex-al-ar + .boom {
+            right: 10px;
+        }
+
         .bloc-img {
             display: flex;
             width: 100%;
@@ -710,26 +751,7 @@ footer {
 }
 
 /* =============== Animation ====================================== */
-   /* == icon heart(icône coeur) section restaurants == */
-.posit-size {
-    position: absolute;
-    right: 10%;
-    bottom: 35%;
-    font-size: 1.8em;
-    color: #00000026;
-}
-   
- .opac1 {
-    opacity: 0;
-    position: absolute;
-    right: 10%;
-    bottom: 35%; 
-    font-size: 1em;
-    cursor: pointer;
- }
-
-
- /* ==== Animation heart (coeur) page index === */
+   /* == icon heart(icône coeur) section restaurants  page index == */
 
 
 
@@ -743,7 +765,6 @@ footer {
 @keyframes afficheMenu {
     0% {
         opacity: 0;
-        /* transition: ease-in-out; */
     }
 
     100% {
