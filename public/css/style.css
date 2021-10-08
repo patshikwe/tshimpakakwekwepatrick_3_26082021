@@ -506,7 +506,7 @@ footer {
     .bloc-info {
         display: flex;
         background-color: #ffffff;
-        width: 90%;
+        width: 80%;
         border-radius: 25px;
         margin-bottom: 20px;
         box-shadow: #ededed 3px 12px 17px;
@@ -656,6 +656,11 @@ footer {
         .t1 {
             margin-left: 19px;
             font-size: 2em;
+        }
+
+        /* elements artcile entrées, plats & desserts, complément ligne 506*/ 
+        .bloc-info {
+            width: 90%;
         }
 
          /* div boom container heart (complément ligne 403) element div store */
