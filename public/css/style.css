@@ -204,8 +204,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /* =============================== */
         /* section resevation, proriétés supplémentaires(index) */
     .flex-col-al:nth-child(1) {
@@ -249,6 +255,7 @@ footer {
     .btn:hover {
         background-image: linear-gradient(#f284d3b3, #b480f4);
         box-shadow: 8px 6px 15px #00000042;
+        color: #ffffffd6;
     }
         /* bloc functioning (fonctionnement) */
     .pres {
@@ -406,16 +413,16 @@ footer {
                 height: 72px;
                 position: absolute;
                 cursor: pointer;
-                bottom: 4%;
+                bottom: -6px;
                 right: 3%;
-                clip-path: polygon(36% 37%, 49% 41%, 60% 38%, 68% 42%, 69% 49%, 47% 72%, 29% 49%, 29% 41%);
+                clip-path: polygon(51% 15%, 65% 12%, 71% 16%, 71% 25%, 51% 51%, 33% 25%, 32% 17%, 38% 12%);
             }
 
             .item {
                 width: 100%;
                 height: 0;
-                background: linear-gradient(#ae5fdb, #b962db, #d66cdb );
-                transition: 0.3s linear;
+                background: linear-gradient(#FF79DA, #9356DC, #99E2D0);
+                transition: 0.3s ease-in-out;
                 position: absolute;
                 bottom: 0;
             }
@@ -424,13 +431,19 @@ footer {
                 height: 100%;
             }
 
-            /* == icon heart (icône coeur) bloc-resto == */
+            /* == icon heart (icône coeur) == */
             .posit-size {
                 position: absolute;
-                left: 28%;
-                bottom: 25%;
+                left: 33%;
+                bottom: 49%;
                 font-size: 1.9em;
                 color: #0000002e;
+            }
+
+            /* Animation icon heart (coeur) font awasome */
+            .boom:hover .fa-heart::before {
+                color: transparent;
+                transition: 0.3s ease-in-out 1s;
             }
 
  /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
@@ -456,10 +469,10 @@ footer {
         font-size: 2.2em;
         margin-top: 27px;
     }
-
+    
     /* div boom container heart (complément ligne 403) element div store */
     .flex-al-ar + .boom {
-         top: 20px;
+         top: 36px;
          right: 11%;
      }
 
@@ -647,7 +660,7 @@ footer {
 
          /* div boom container heart (complément ligne 403) element div store */
         .flex-al-ar + .boom {
-            right: 10px;
+            right: 6%;
         }
 
         .bloc-img {
@@ -687,7 +700,6 @@ footer {
 }
 
 /* ============================================================================= */
-
     /* === Media query Tablet (Tablette) ======= */
 @media screen and (min-width: 641px) and (max-width: 1024px) {
 
@@ -750,18 +762,7 @@ footer {
     }
 }
 
-/* =============== Animation ====================================== */
-   /* == icon heart(icône coeur) section restaurants  page index == */
-
-
-
-
-/* la pallette du goût, la note enchantée, à la farnçaise et le delice des sens */
-    /* == hearts (coeurs) == */
-
-
-
-/* ===== Animation Affichage Menu==== */
+/* ===== Animation Affichage Menu ==== */
 @keyframes afficheMenu {
     0% {
         opacity: 0;
