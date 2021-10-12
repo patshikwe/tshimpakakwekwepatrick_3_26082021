@@ -408,7 +408,6 @@ footer {
             }
 
             .boom {
-                display: flex;
                 width: 40px;
                 height: 35px;
                 position: absolute;
