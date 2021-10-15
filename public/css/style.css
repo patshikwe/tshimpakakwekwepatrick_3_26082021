@@ -515,20 +515,7 @@ footer {
         display: none;
         font-size: 2em;
         color: white;
-        -webkit-animation: check 0.6s ease-in-out both;
-	        animation: check 0.6s ease-in-out both;
-    }
-
-    @-webkit-keyframes check {
-        0% {
-        -webkit-transform: rotate(0);
-            
-        }
-
-        100% {
-        -webkit-transform: rotate(360deg);
-                
-        }
+	    animation: check 0.6s ease-in-out both;
     }
 
     @keyframes check {
