@@ -3,6 +3,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    background: #f6f6f6;
 
 }
 
@@ -16,19 +17,10 @@ body {
     top: 0;
     z-index: 1;
     opacity: 1;
-    -webkit-animation: dv-load 2.9s ease-in-out forwards;
-    -o-animation: dv-load 2.9s ease-in-out forwards; 
     animation: dv-load 2.9s ease-in-out forwards;
 }
 
 /* Animation div container loader page index */
-@-webkit-keyframes dv-load {
-    100% {
-        -webkit-opacity: 0;
-        visibility: hidden;
-    }
-}
-
 @keyframes dv-load {
     100% {
         opacity: 0;
@@ -52,24 +44,10 @@ body {
     justify-content: center;
     font-weight: 900;
     opacity: 0;
-    -webkit-animation: loader 2.5s ease-out;
-    -o-animation: loader 2.5s ease-out;
-    animation: loader 2.5s ease-out;
+    animation: loader 2.9s ease-out;
 }
 
     /* == Animation loader (chargement) == */
-    @-webkit-keyframes loader {
-        0% {
-        -webkit-transform: rotate(0deg);
-        -webkit-opacity: 1;
-        }
-
-        100% {
-            -webkit-transform: rotate(360deg);
-            -webkit-opacity: 0;
-        }
-    }
-
     @keyframes loader {
         0% {
             transform: rotate(0deg);
@@ -101,7 +79,7 @@ a {
 
 header {
     background-color: #ffffff;
-    height: 70px;
+    height: 79px;
 }
 
     /* header (la palette, la note enchantée, à la française et le delice des sens) */
@@ -115,7 +93,7 @@ header {
 header div {
     height: 49px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 27px;
 }
 
     /* localisation */
@@ -130,9 +108,15 @@ header div {
     height: 60px;
 }
      .maps >span {
-        margin-right: 15px;
+        margin-right: 26px;
+        font-size: 1.3em;
     }
 
+    .maps > h4 {
+        font-size: 1.2em;
+        margin-right: 19px;
+       }
+       
     /* =========== footer ======== */
 footer {
     background-color: #353535;
@@ -195,6 +179,10 @@ footer {
     padding-top: 20px;
 }
 
+.back {
+    background-color: #ffffff;
+}
+
 .flex-al {
     display: flex;
     align-items: center;
@@ -216,7 +204,6 @@ footer {
         /* section resevation, proriétés supplémentaires(index) */
     .flex-col-al:nth-child(1) {
         background-color: #f6f6f6;
-        height: 275px;
         margin-bottom: 20px;
         padding-left: 13px;
         padding-right: 20px;
@@ -232,7 +219,7 @@ footer {
 
         /* Section reservation element p */
         .flex-col-al p {
-            font-size: 1.1em;
+            font-size: 1.2em;
             margin-bottom: 28px;
         }
 
@@ -240,22 +227,22 @@ footer {
         /*section reservation (Explorer nos restaurants) */
     .btn {
         border: #bfbfbf 1px solid;
-        width: 208px;
-        height: 57px;
+        width: 15rem;
+        height: 4rem;
         border-radius: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-image: linear-gradient(#FF79DA, #9356DC);
-        color: white;
+        color: #ffffff;
+        font-size: 1.1em;
         box-shadow: 4px 5px 8px #00000042;
         cursor: pointer;
     }
 
     .btn:hover {
-        background-image: linear-gradient(#f284d3b3, #b480f4);
-        box-shadow: 8px 6px 15px #00000042;
-        color: #ffffffd6;
+        background-image: linear-gradient(#f284d3e6, #b480f4);
+        box-shadow: 3px 9px 25px #000000b3;
     }
         /* bloc functioning (fonctionnement) */
     .pres {
@@ -281,8 +268,8 @@ footer {
         }
 
         .intro:hover {
-            background-color: #f6f6f64f;
-            box-shadow: #dcdcdcd9 0px 2px 26px;
+            background-color: #f6f6f61c;
+            box-shadow: #0000008c 2px 1px 20px;
         }
 
             /* 3ème bloc section fonctionnement */
@@ -415,7 +402,7 @@ footer {
                 right: 3%;
                 cursor: pointer;
                 clip-path: polygon(10% 30%, 10.964163780212402% 23.847850799560547%, 13.781545639038086% 18.294574737548828%, 18.167877197265625% 13.87390422821045%, 23.698843002319336% 11.012911796569824%, 29.84322738647461% 10.00069522857666%, 36.00278854370117% 10.916526794433594%, 41.5780029296875% 13.690196990966797%, 46.03273391723633% 18.041913986206055%, 48.937103271484375% 23.55021095275879%, 49.99748992919922% 29.686431884765625%, 50.87010192871094% 24.147005081176758%, 53.59980392456055% 18.55011749267578%, 57.916664123535156% 14.061568260192871%, 63.402008056640625% 11.113999366760254%, 69.52970886230469% 10.005491256713867%, 75.7029037475586% 10.824935913085938%, 81.32111358642578% 13.510400772094727%, 85.84317779541016% 17.792112350463867%, 88.8337631225586% 23.25417137145996%, 89.9903564453125% 29.372953414916992%, 89.65007781982422% 35.61106491088867%, 88.46686553955078% 41.74618911743164%, 86.52460479736328% 47.68563461303711%, 83.93058776855469% 53.37174606323242%, 80.79669952392578% 58.779991149902344%, 77.22384643554688% 63.90948486328125%, 73.2959976196289% 68.77303314208984%, 69.0808334350586% 73.39031219482422%, 64.63136291503906% 77.78248596191406%, 59.98921585083008% 81.97077941894531%, 55.18699645996094% 85.97466278076172%, 50.25046920776367% 89.81172180175781%, 45.30208206176758% 86.36652374267578%, 40.485450744628906% 82.38014221191406%, 35.82589340209961% 78.211181640625%, 31.35537338256836% 73.84033966064453%, 27.114566802978516% 69.24664306640625%, 23.155170440673828% 64.40867614746094%, 19.54315948486328% 59.30665588378906%, 16.360923767089844% 53.926612854003906%, 13.707906723022461% 48.26767349243164%, 11.695180892944336% 42.35161209106445%, 10.43166732788086% 36.232295989990234%, 10% 30%);
-                background: 4px 3px url(../img/resto/heart-border.png) no-repeat;
+                background: 5px 3px url(../img/resto/heart-border.png) no-repeat;
                 background-size: 30px 29px;
             }
 
@@ -432,27 +419,11 @@ footer {
                 height: 100%;
             }
 
-            /* == icon heart (icône coeur) == */
-            .posit-size {
-                position: absolute;
-                left: 33%;
-                bottom: 49%;
-                font-size: 1.9em;
-                color: #0000002e;
-            }
-
-            /* Animation icon heart (coeur) font awasome */
-            .boom:hover .fa-heart::before {
-                color: transparent;
-                transition: 0.3s ease-in-out 1s;
-            }
-
  /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
 
 .back-posit {
     background-color: #f6f6f6;
     position: relative;
-    top: 39px;
 }
     /* bloc general grey (bloc général gris */
 .store {
@@ -591,12 +562,6 @@ footer {
         display: flex;
         justify-content: space-between;
     }
-
-        /* modif btn  */
-    .btn-modif {
-        height: 60px;
-        margin: 20px;
-    }
     
 /* ============================================================== */
 
@@ -646,6 +611,10 @@ footer {
             width: 100%;
         }
 
+        .bloc-resto:nth-child(4){
+            margin-bottom: 4rem;
+        }
+
         /* == la pallette du goût, la note enchantée, à la farnçaise et le delice des sens == */
 
         .store {
@@ -657,6 +626,7 @@ footer {
         h5 {
             margin-left: 19px;
             font-size: 2em;
+            width: 100%;
         }
 
         /* elements artcile entrées, plats & desserts, complément ligne 506*/ 
@@ -780,17 +750,17 @@ footer {
 }
         
 .bloc-info:nth-child(1) {
-   animation: afficheMenu 1s;
+   animation: afficheMenu 1.6s;
 }
 
 .bloc-info:nth-child(2) {
-    animation: afficheMenu 2s;
+    animation: afficheMenu 2.4s;
 }
 
 .bloc-info:nth-child(3) {
-    animation: afficheMenu 2.8s;
+    animation: afficheMenu 2.9s;
 }
  
 .bloc-info:nth-child(4) {
-    animation: afficheMenu 3.2s;
+    animation: afficheMenu 3.4s;
 }
